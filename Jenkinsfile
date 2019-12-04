@@ -1,6 +1,12 @@
 pipeline {
-  agent any 
+  agent {
+    label '!windows'
+  }
   
+  environment {
+    JAVA_HOME = 'C:\Product\Java\jdk-13.0.1'
+    PATH = '%PATH%:C:\Product\Java\jdk-13.0.1\bin'
+  }
   stages {
     stage ('Compile Stage') {
       
