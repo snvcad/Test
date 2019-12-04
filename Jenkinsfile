@@ -6,13 +6,14 @@ pipeline {
       
       steps { 
         echo 'Running compile stage'
-        bat "cd c:\\product"
+        bat "javac HelloWorld.java"
       }
     }
     
    stage ('Test Stage') {
      steps { 
       echo 'Running Test stage'
+       bat "java HelloWorld"
      
      }
     }
