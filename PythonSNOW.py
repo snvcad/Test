@@ -4,7 +4,7 @@ import requests
 # Set the request parameters
 # sys_id 563504cc47410200e90d87e8dee490e2
 # url = 'https://developer.service-now.com/api/sn_chg_rest/change/standard/92b8544047810200e90d87e8dee490b0?description=test&short_description=Reboot%20server&no_such_field=something'
-url = 'http://dev95639.service-now.com/api/sn_chg_rest/change/standard/# sys_id 563504cc47410200e90d87e8dee490e2?description=test&short_description=Reboot%20server&no_such_field=something' 
+url = 'https://dev95639.service-now.com/api/sn_chg_rest/change/standard/563504cc47410200e90d87e8dee490e2?description=test&short_description=Reboot%20server&no_such_field=something' 
 # Eg. User name="username", Password="password" for this code sample.
 user = 'admin'
 pwd = 'llnB6Lb3TaYV'
