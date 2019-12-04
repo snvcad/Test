@@ -6,7 +6,7 @@ pipeline {
       
       steps { 
         echo 'Running compile stage'
-        bat "C://Product\Java\jdk-13.0.1\bin\javac HelloWorld.java"
+        bat "C://Product//Java//jdk-13.0.1//bin//javac HelloWorld.java"
       }
     }
     
