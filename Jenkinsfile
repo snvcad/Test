@@ -6,7 +6,7 @@ pipeline {
       
       steps { 
         echo 'Running compile stage'
-        echo "{env.JAVA_HOME}"
+        echo "${env.JAVA_HOME}"
         bat "C:\\Product\\Java\\jdk-13.0.1\\bin\\javac HelloWorld.java"
       }
     }
