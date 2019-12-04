@@ -2,11 +2,11 @@ pipeline {
   agent any 
   
   stages {
-    stage ('Compile Stage') {
+    steps ('Compile Stage') {
       echo 'Running compile stage'
     }
     
-    stage ('Deployment Stage') {
+    steps ('Deployment Stage') {
       echo 'Running deployment stage'
     }
   }
