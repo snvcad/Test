@@ -8,6 +8,7 @@ pipeline {
         echo 'Running compile stage'
         echo "${env.JAVA_HOME}"
         bat "${env.JAVA_HOME}\\bin\\javac HelloWorld.java"
+        bat "c:\\product\\python\\python36\\python --version"
       }
     }
     
