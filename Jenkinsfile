@@ -6,7 +6,7 @@ pipeline {
       
       steps { 
         echo 'Running compile stage'
-        bat 'dir'
+        bat "cd c:\\product"
       }
     }
     
