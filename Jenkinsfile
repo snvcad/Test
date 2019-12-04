@@ -5,12 +5,14 @@ pipeline {
     stage ('Compile Stage') {
       steps { 
         echo 'Running compile stage'
+        bat 'javac HelloWorld.java'
       }
     }
     
-   stage ('Deployment Stage') {
+   stage ('Test Stage') {
      steps { 
-      echo 'Running deployment stage'
+      echo 'Running Test stage'
+      bat 'java HelloWorld'
      }
     }
   }
