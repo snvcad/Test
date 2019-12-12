@@ -13,7 +13,7 @@
 
 class UpdateContent 
 {
-   File htmlTemplateFile = new File("path/template.html");
+   File htmlTemplateFile = new File("template.html");
    String htmlString = FileUtils.readFileToString(htmlTemplateFile);
    String title = "New Page";
    String body = "This is Body";
