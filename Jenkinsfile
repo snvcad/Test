@@ -7,7 +7,7 @@ pipeline {
       steps { 
         echo 'Running compile stage'
         echo "${env.JAVA_HOME}"
-        bat "${env.JAVA_HOME}\\bin\\javac HelloWorld.java"
+        bat "${env.JAVA_HOME}\\bin\\javac UpdateContent.java"
         bat "c:\\product\\python\\python36\\python PythonSNOW.py"
       }
     }
