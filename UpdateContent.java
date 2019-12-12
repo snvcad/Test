@@ -13,12 +13,14 @@
 
 class UpdateContent 
 {
-   File htmlTemplateFile = new File("template.html");
-   String htmlString = FileUtils.readFileToString(htmlTemplateFile);
-   String title = "New Page";
-   String body = "This is Body";
-   htmlString = htmlString.replace("$title", title);
-   htmlString = htmlString.replace("$body", body);
-   File newHtmlFile = new File("path/new.html");
-   FileUtils.writeStringToFile(newHtmlFile, htmlString);
+    public static void main(String args[]) {
+      File htmlTemplateFile = new File("template.html");
+      String htmlString = FileUtils.readFileToString(htmlTemplateFile);
+      String title = "New Page";
+      String body = "This is Body";
+      htmlString = htmlString.replace("$title", title);
+      htmlString = htmlString.replace("$body", body);
+      File newHtmlFile = new File("path/new.html");
+      FileUtils.writeStringToFile(newHtmlFile, htmlString);
+    }
 }
