@@ -1,9 +1,9 @@
-import java.io.File; 
-import org.apache.commons.io.FileUtils;
+//import java.io.File; 
+//import org.apache.commons.io.FileUtils;
 
 /* This is a simple Java program. 
    FileName : "HelloWorld.java". */
-/* class HelloWorld 
+ class HelloWorld 
 { 
     // Your program begins with a call to main(). 
     // Prints "Hello, World" to the terminal window. 
@@ -12,8 +12,8 @@ import org.apache.commons.io.FileUtils;
         System.out.println("Hello, World"); 
     } 
 } 
-*/
 
+/*
 class UpdateContent 
 {
     public static void main(String args[]) {
@@ -27,3 +27,4 @@ class UpdateContent
       FileUtils.writeStringToFile(newHtmlFile, htmlString);
     }
 }
+*/
