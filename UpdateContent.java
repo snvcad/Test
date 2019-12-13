@@ -27,7 +27,7 @@ class UpdateContent
       	String body = "This is Body";
       	htmlString = htmlString.replace("$title", title);
       	htmlString = htmlString.replace("$body", body);
-      	File newHtmlFile = new File("index.html");
+      	File newHtmlFile = new File("C:/Project/GitHub/Test/index.html");
       	FileUtils.writeStringToFile(newHtmlFile, htmlString);
       } catch (Exception e) {
 	 System.out.println ("Error" + e.toString());
