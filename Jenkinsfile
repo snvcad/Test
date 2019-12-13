@@ -7,7 +7,7 @@ pipeline {
       steps { 
         echo 'Running compile stage'
         echo "${env.JAVA_HOME}"
-        bat "${env.JAVA_HOME}\\bin\\javac UpdateContent.java"
+        bat "${env.JAVA_HOME}\\bin\\javac -classpath ${env.CLASSPATH} UpdateContent.java"
     
       }
     }
@@ -15,7 +15,7 @@ pipeline {
    stage ('Test Stage') {
      steps { 
       echo 'Running Test stage'
-       bat "${env.JAVA_HOME}\\bin\\java UpdateContent"
+       bat "${env.JAVA_HOME}\\bin\\java -classpath ${env.CLASSPATH} UpdateContent"
 
      }
     }
