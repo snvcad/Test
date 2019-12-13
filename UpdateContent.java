@@ -1,9 +1,10 @@
-//import java.io.File; 
-//import org.apache.commons.io.FileUtils;
+import java.lang.Object;
+import org.apache.commons.io.*;
+import org.apache.commons.io.FileUtils;
 
 /* This is a simple Java program. 
    FileName : "HelloWorld.java". */
- class UpdateContent 
+/* class UpdateContent 
 { 
     // Your program begins with a call to main(). 
     // Prints "Hello, World" to the terminal window. 
@@ -13,18 +14,23 @@
     } 
 } 
 
-/*
+*/
 class UpdateContent 
 {
     public static void main(String args[]) {
+
       File htmlTemplateFile = new File("template.html");
-      String htmlString = FileUtils.readFileToString(htmlTemplateFile);
-      String title = "New Page";
-      String body = "This is Body";
-      htmlString = htmlString.replace("$title", title);
-      htmlString = htmlString.replace("$body", body);
-      File newHtmlFile = new File("path/new.html");
-      FileUtils.writeStringToFile(newHtmlFile, htmlString);
-    }
+      try {
+      	String htmlString = FileUtils.readFileToString(htmlTemplateFile);
+      	String title = "New Page";
+      	String body = "This is Body";
+      	htmlString = htmlString.replace("$title", title);
+      	htmlString = htmlString.replace("$body", body);
+      	File newHtmlFile = new File("index.html");
+      	FileUtils.writeStringToFile(newHtmlFile, htmlString);
+      } catch (Exception e) {
+	 System.out.println ("Error" + e.toString());
+      }	
+  }
 }
-*/
+
