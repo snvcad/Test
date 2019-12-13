@@ -21,9 +21,10 @@ pipeline {
     }
     
     stage ('Production Stage') {
-     steps { 
-      echo 'Opening change ticket in servicenow'
-      bat "c:\\product\\python\\python36\\python PythonSNOW.py"
-     }  
+       steps { 
+        echo 'Opening change ticket in servicenow'
+        bat "c:\\product\\python\\python36\\python PythonSNOW.py"
+       }  
+    }
   }
 }
