@@ -16,8 +16,14 @@ pipeline {
      steps { 
       echo 'Running Test stage'
        bat "${env.JAVA_HOME}\\bin\\java UpdateContent"
-       bat "c:\\product\\python\\python36\\python PythonSNOW.py"
+
      }
     }
+    
+    stage ('Production Stage') {
+     steps { 
+      echo 'Opening change ticket in servicenow'
+      bat "c:\\product\\python\\python36\\python PythonSNOW.py"
+     }  
   }
 }
