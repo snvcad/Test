@@ -24,7 +24,7 @@ class UpdateContent
       try {
       	String htmlString = FileUtils.readFileToString(htmlTemplateFile);
       	String title = "New Page";
-      	String body = "This is Body";
+      	String body = "Doug Demo";
       	htmlString = htmlString.replace("$title", title);
       	htmlString = htmlString.replace("$body", body);
       	File newHtmlFile = new File("C:/Project/GitHub/Test/index.html");
